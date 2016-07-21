@@ -5,8 +5,8 @@
 </head>
 <body>
 <form action="insertar.php" method="post" name="form">
-    <input type="text" name="fecha" placeholder="fecha" ><br>
-    <input type="text" name="municipio" placeholder="municipio"><br>
+    <input type="text" name="otro" placeholder="otro" ><br>
+    <input type="password" name="pw" placeholder="password"><br>
     <input type="submit" value="Insertar datos">
 </form>
 </body>
