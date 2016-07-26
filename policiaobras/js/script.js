@@ -1,0 +1,119 @@
+$(document).ready(function(){
+	$(".plan-vale").click(function(){
+		$(".mike").removeClass("hidden");
+		$(".mike2").addClass("hidden");
+	});		
+	$(".plan-padri").click(function(){
+		$(".mike2").removeClass("hidden");
+		$(".mike").addClass("hidden");
+	});	
+	$("#radio6-1").click(function(){
+		$(".event").removeClass("hidden");
+	});
+	$("#radio7-1").click(function(){
+		$(".event").addClass("hidden");
+	});
+	$(".activo").click(function(){
+		$(".time-servicio").removeClass("hidden");
+		$(".time-reserva").addClass("hidden");
+		$(".parentesco").addClass("hidden");
+		$(".suspendido").addClass("hidden");
+	});
+	$(".pensionado").click(function(){
+		$(".time-servicio").addClass("hidden");
+		$(".time-reserva").removeClass("hidden");
+		$(".parentesco").addClass("hidden");
+		$(".suspendido").addClass("hidden");
+	});
+	$(".familiar").click(function(){
+		$(".time-servicio").addClass("hidden");
+		$(".time-reserva").addClass("hidden");
+		$(".parentesco").removeClass("hidden");
+		$(".suspendido").addClass("hidden");
+	});
+	$(".privacion").click(function(){
+		$(".time-servicio").addClass("hidden");
+		$(".time-reserva").addClass("hidden");
+		$(".parentesco").addClass("hidden");
+		$(".suspendido").removeClass("hidden");
+	});
+	$(".uniforme").click(function(){
+		$(".tallas").removeClass("hidden");
+	});
+	$(".utiles").click(function(){
+		$(".tallas").addClass("hidden");
+	});
+	$(".refrigerio").click(function(){
+		$(".tallas").addClass("hidden");
+	});
+	$(".transporte").click(function(){
+		$(".tallas").addClass("hidden");
+	});
+	$(".pension").click(function(){
+		$(".tallas").addClass("hidden");
+	});
+	$(".item1").click(function(){
+		$(".wrapper").removeClass("hidden");
+		$(".wrapper2").addClass("hidden");
+		$(this).addClass("active");
+		$(".item2").removeClass("active");
+	});
+	$(".item2").click(function(){
+		$(".wrapper").addClass("hidden");
+		$(".wrapper2").removeClass("hidden");
+		$(this).addClass("active");
+		$(".item1").removeClass("active");
+	});
+	$("#select").on('change', function(){
+		if ( $(this).val() == "otro" ){
+			$(".juanito").removeClass("hidden");
+		}
+		else {
+			$(".juanito").addClass("hidden");
+		}
+	});
+	$("#select_hijos").on('change', function(){
+		if ( $(this).val() == "cero" ){
+			$(".hijo1").addClass("hidden");
+			$(".hijo2").addClass("hidden");
+			$(".hijo3").addClass("hidden");
+			$(".hijo4").addClass("hidden");
+			$(".hijo5").addClass("hidden");
+		}
+		else if ( $(this).val() == "one" ) {
+			$(".hijo1").removeClass("hidden");
+			$(".hijo2").addClass("hidden");
+			$(".hijo3").addClass("hidden");
+			$(".hijo4").addClass("hidden");
+			$(".hijo5").addClass("hidden");
+		}
+		else if ( $(this).val() == "two" ) {
+			$(".hijo1").removeClass("hidden");
+			$(".hijo2").removeClass("hidden");
+			$(".hijo3").addClass("hidden");
+			$(".hijo4").addClass("hidden");
+			$(".hijo5").addClass("hidden");
+		}
+		else if ( $(this).val() == "three" ) {
+			$(".hijo1").removeClass("hidden");
+			$(".hijo2").removeClass("hidden");
+			$(".hijo3").removeClass("hidden");
+			$(".hijo4").addClass("hidden");
+			$(".hijo5").addClass("hidden");
+		}
+		else if ( $(this).val() == "four" ) {
+			$(".hijo1").removeClass("hidden");
+			$(".hijo2").removeClass("hidden");
+			$(".hijo3").removeClass("hidden");
+			$(".hijo4").removeClass("hidden");
+			$(".hijo5").addClass("hidden");
+		}
+		else if ( $(this).val() == "five" ) {
+			$(".hijo1").removeClass("hidden");
+			$(".hijo2").removeClass("hidden");
+			$(".hijo3").removeClass("hidden");
+			$(".hijo4").removeClass("hidden");
+			$(".hijo5").removeClass("hidden");
+		}	
+	});
+});

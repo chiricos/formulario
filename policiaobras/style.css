@@ -1,0 +1,370 @@
+* {margin: 0; padding: 0;}
+body {
+	font-family: 'Lato', sans-serif;
+}
+.banner{
+	width: 100%;
+}
+.banner img{
+	width: 100%;
+}
+/*form styles*/
+#msform {
+	padding-top: 50px;
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+#msform fieldset {
+	background: white;
+	border: 0 none;
+	border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 20px 15px;
+	box-sizing: border-box;
+	width: 100%;
+	margin: 0 auto 35px;
+	text-align: center;
+	/*stacking fieldsets above each other*/
+	position: relative;
+}
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+	display: none;
+}
+#msform input[type=radio].css-checkbox + label.css-label {
+	padding-left:25px;
+	height:20px; 
+	display:inline-block;
+	line-height:20px;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	font-size:20px;
+	vertical-align:middle;
+	cursor:pointer;
+}
+#msform	input[type=radio].css-checkbox {
+	position:absolute;
+	z-index:-1000;
+	left:-1000px; 
+	overflow: hidden; 
+	clip: rect(0 0 0 0); 
+	height:1px; 
+	width:1px; 
+	margin:-1px; 
+	padding:0; 
+	border:0;
+}
+#msform	input[type=radio].css-checkbox:checked + label.css-label {
+	background-position: 0 -20px;
+}
+label.css-label {
+	background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_751f1f264a1a57e5fe5de4abf1cb620a.png);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+label{
+	color: #515151;
+	display: inline-block;
+}
+h5{
+	color: #006fd5;
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 16px;
+}
+h5 span{
+    border: 4px solid #006fd5;
+    border-radius: 50%;
+    margin-right: 26px;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 5px;
+    text-align: center;
+    min-height: 40px;
+    min-width: 45px;
+    color: #fff;
+    background: #00b6fd;
+}
+p{
+	color: #006fd5;
+	margin-bottom: 10px;
+}
+p.descrip {
+    color: #afafaf;
+    margin: 30px 40px 0px 40px;
+    line-height: 22px;
+}
+.columna-izq{
+	text-align: left;
+	display: inline-block;
+	width: 48%;
+	margin-bottom: 50px;
+}
+.column-der{
+	text-align: left;
+	display: inline-block;
+	width: 48%;
+	vertical-align: top;
+	padding: 56px 0 0 0;
+}
+input[type="checkbox"]{
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: #fff;
+	border: 1px solid #848484;
+	border-radius: 7px;
+	width: 40px;
+	height: 40px;
+}
+.plan{
+	display: inline-block;
+	width: 48%;
+	text-align: center;
+	vertical-align: top;
+	margin-bottom: 50px;
+}
+.antecedentes{
+	width: 49%;
+	height: 120px;
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: 50px;
+	text-align: center;
+}
+#select{
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	background: url('../images/arrow-select.png') no-repeat;
+	background-position: 324px;
+	width: 60%;
+	height: 40px;
+	border: 1px solid #848484;
+}
+span.nota{
+	color: #515151;
+	font-size: 13px;
+	margin-bottom: 30px;
+}
+.donaciones{
+	width: 100%;
+	text-align: center;
+	margin: 50px 0;  
+}
+.entidades{
+	width: 30%;
+	display: inline-block;
+	text-align: left;
+}
+.select-ent{
+	background-position: 185px !important;
+}
+.duracion{
+	width: 30%;
+	display: inline-block;
+	text-align: left;
+}
+.duracion > input[type="text"]{
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: #fff;
+	border: 1px solid #848484;
+	height: 40px;
+}
+.beneficio{
+	width: 30%;
+	display: inline-block;
+	text-align: left;
+}
+.beneficio > input[type="text"]{
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: #fff;
+	border: 1px solid #848484;
+	height: 40px;
+	width: 100%;
+}
+.datos-solicitante{
+	text-align: center;
+	margin-bottom: 50px;
+}
+.datos-solicitante label{
+	width: 25%;
+	text-align: left;	
+}
+#time{
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: #fff;
+	border: 1px solid #848484;
+	border-radius: 7px;
+	width: 40px;
+	height: 40px;
+}
+.datos-solicitante input[type="text"]{
+
+}
+#datos-solicitante{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 50px;
+}
+.col-der{
+	width: 35%;
+	display: inline-block;
+	text-align: center;
+	margin-right: 60px;
+}
+.col-izq{
+	width: 35%;
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+}
+.campos-datos label{
+	width: 100%;
+	text-align: left;
+}
+.campos-datos input[type="text"]{
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: #fff;
+	border: 1px solid #848484;
+	width: 100%;
+	height: 40px;
+	margin-top: 5px;
+    margin-bottom: 9px;
+}
+#input-middle{
+    width: 47%;
+    margin-right: 20px;
+}
+.datos-funcionario{
+	width: 100%;
+	text-align: center;
+}
+.info-personal{
+	display: block;
+	text-align: left;
+	width: 70%;
+    margin: 0 auto;
+}
+#estado-civil{
+	width: 30%;
+	text-align: left;
+}
+.row-one{
+	width: 40%;
+    padding-top: 100px;
+    text-align: center;
+    display: inline-block;
+	vertical-align: top;
+}
+.row-two{
+	width: 55%;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 41px;
+    text-align: left;
+}
+.row-two input[type="text"]{
+	    width: 90px;
+    height: 30px;
+    position: relative;
+    top: -15px;
+}
+
+/*buttons*/
+#msform .action-button {
+    background: #00b6fd;
+    font-weight: bold;
+    color: white;
+    border-radius: 1px;
+    cursor: pointer;
+    padding: 12px 25px;
+    margin: auto;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-bottom: 19px;
+    border: 4px solid #006fd5;
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+#msform .action-button:hover, #msform .action-button:focus {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #006fd5;
+}
+/*headings*/
+.fs-title {
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #2C3E50;
+	margin-bottom: 10px;
+}
+.fs-subtitle {
+	font-weight: normal;
+	font-size: 13px;
+	color: #666;
+	margin-bottom: 20px;
+}
+/*progressbar*/
+#progressbar {
+	margin-bottom: 30px;
+	overflow: hidden;
+	/*CSS counters to number the steps*/
+	counter-reset: step;
+}
+#progressbar li {
+	list-style-type: none;
+	color: white;
+	text-transform: uppercase;
+	font-size: 9px;
+	width: 33.33%;
+	float: left;
+	position: relative;
+}
+#progressbar li:before {
+	content: counter(step);
+	counter-increment: step;
+	width: 20px;
+	line-height: 20px;
+	display: block;
+	font-size: 10px;
+	color: #333;
+	background: white;
+	border-radius: 3px;
+	margin: 0 auto 5px auto;
+}
+/*progressbar connectors*/
+#progressbar li:after {
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: white;
+	position: absolute;
+	left: -50%;
+	top: 9px;
+	z-index: -1; /*put it behind the numbers*/
+}
+#progressbar li:first-child:after {
+	/*connector not needed before the first step*/
+	content: none; 
+}
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before,  #progressbar li.active:after{
+	background: #27AE60;
+	color: white;
+}
+
+
+

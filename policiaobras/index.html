@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="banner">
+        <img src="images/cabecera.jpg" alt="">
+    </div>
+<section class="contenedor">    
+  <!-- multistep form -->
+  <form id="msform">
+    <!--Paso Numero Uno-->
+    <fieldset>
+      <h5><span>1</span>PROGRAMA DE EDUCACIÓN AL QUE APLICA</h5>
+          <div class="plan">
+            <input type="radio" name="programa" id="radio2" class="css-checkbox" checked="checked"/> 
+            <label for="radio2" class="css-label radGroup1 plan-padri">PLAN PADRINO</label>
+            <p class="descrip">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam convallis felis at tellus porttitor placerat. Cras iaculis, augue ut blandit venenatis, magna sem vulputate nulla, a volutpat odio tellus eu arcu. Sed dolor lorem, luctus et feugiat eget, feugiat nec purus. In lobortis consectetur tristique.</p>
+          </div>
+          <div class="plan">
+            <input type="radio" name="programa" id="radio3" class="css-checkbox" />
+            <label for="radio3" class="css-label radGroup1 plan-vale">VALENTINA TE SONRIE</label>
+            <p class="descrip">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam convallis felis at tellus porttitor placerat. Cras iaculis, augue ut blandit venenatis, magna sem vulputate nulla, a volutpat odio tellus eu arcu. Sed dolor lorem, luctus et feugiat eget, feugiat nec purus. In lobortis consectetur tristique.</p>
+          </div>
+          <input type="button" name="next" class="next action-button" value="Siguiente" />
+    </fieldset>
+    <fieldset>
+      <!-- OPCIONES PLAN PADRINO -->
+      <h5 class="mike2">ANTECEDENTES CLÍNICOS incapacitantes en algún miembro del nucleo familiar</h5>
+      <div class="columna-izq mike2">
+        <p class="descrip mike2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam convallis felis at tellus porttitor placerat. Cras iaculis, augue ut blandit venenatis, magna sem vulputate nulla, a volutpat odio tellus eu arcu. Sed dolor lorem, luctus et feugiat eget, feugiat nec purus. In lobortis consectetur tristique.</p>
+      </div>
+      <div class="column-der mike2" style="padding-top:56px;">
+        <input type="radio" id="radio4" name="verificacion"  class="css-checkbox mike2" checked="checked" />
+        <label for="radio4" class="css-label radGroup2 mike2">SI</label>
+        <input type="radio" id="radio5" name="verificacion"  class="css-checkbox" />
+        <label for="radio5" class="css-label radGroup2 mike2">NO</label>
+      </div>
+      <!--FIN OPCIONES PLAN PADRINO-->   
+      <!-- OPCIONES PLAN VALENTINA -->
+      <h5 class="mike hidden ">ANTECEDENTES CLÍNICOS Y/O DIAGNÓSTICO MÉDICO RECIENTE</h5>
+      <div class="columna-izq mike hidden ">
+        <p class="descrip mike hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam convallis felis at tellus porttitor placerat. Cras iaculis, augue ut blandit venenatis, magna sem vulputate nulla, a volutpat odio tellus eu arcu. Sed dolor lorem, luctus et feugiat eget, feugiat nec purus. In lobortis consectetur tristique.</p>
+      </div>
+      <div class="column-der mike hidden">
+        <select name="autismo" id="select" class="mike hidden">
+          <option value=""></option>
+          <option value="autismo">Autismo</option>
+          <option value="coeficiente-intelectual">Coeficiente intelectual avanzado</option>
+          <option value="paralisis-cerebral">Paralisis cerebral</option>
+          <option value="retardo-mental">Retardo Mental</option>
+          <option value="hipoacusia">Hipoacusia</option>
+          <option value="problema-aprendizaje">Problema de Aprendizaje</option>
+          <option value="sindrome-down">Sindrome de Down</option>
+          <option value="epilepsia">Epilepsia</option>
+          <option value="otro" class="otro">Otro Cual?</option>
+        </select>
+        <input type="text" placeholder="Cual?" class="juanito hidden">
+      <!-- FIN OPCIONES PLAN VALENTINA -->
+      </div>
+      <input type="button" name="previous" class="previous action-button" value="Anterior" />
+      <input type="button" name="next" class="next action-button" value="Siguiente" />
+    </fieldset>
+    <fieldset>
+      <h5><span>2</span>¿HA RECIBIDO AYUDAS ECONÓMICAS O DONACIONES?</h5>
+        <div class="columna-izq">
+          <p class="descrip">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam convallis felis at tellus porttitor placerat. Cras iaculis, augue ut blandit venenatis, magna sem vulputate nulla, a volutpat odio tellus eu arcu. Sed dolor lorem, luctus et feugiat eget, feugiat nec purus. In lobortis consectetur tristique.
+          </p>
+        </div> 
+        <div class="column-der">
+          <input type="radio" id="radio6" name="verificacion"  class="css-checkbox"/>
+          <label for="radio6" id="radio6-1" class="css-label radGroup2">SI</label>
+          <input type="radio" id="radio7" name="verificacion"  class="css-checkbox" checked="checked" />
+          <label for="radio7" id="radio7-1" class="css-label radGroup2">NO</label>
+          <select name="entidad" id="select2" class="event hidden ">
+              <option value="">AOS</option>
+              <option value="">BECA BIESO</option>
+              <option value="">CORAZON VERDE</option>
+              <option value="">CORPORACION</option>
+              <option value="">MATAMORROS</option>
+              <option value="">DIRECCION DE SANIDAD</option>
+              <option value="">ESTADO</option>
+              <option value="">OTRAS</option>  
+          </select>
+          <div class="event hidden"> 
+            ¿DURANTE CUÁNTO TIEMPO? <br>
+            <input type="text"> <br>
+            ¿QUE BENEFICIOS OBTUVO? <br>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+          </div>  
+        </div> 
+      <input type="button" name="previous" class="previous action-button" value="Anterior" />
+      <input type="button" name="next" class="next action-button" value="Siguiente" />
+    </fieldset>
+    <fieldset>
+      <h5><span>3</span>DATOS DEL SOLICITANTE</h5>
+          <div class="columna-izq2">
+            <p class="descrip">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam convallis felis at tellus porttitor placerat. Cras iaculis, augue ut blandit venenatis, magna sem vulputate nulla, a volutpat odio tellus eu arcu. Sed dolor lorem, luctus et feugiat eget, feugiat nec purus. In lobortis consectetur tristique.
+            </p>
+            <input type="radio" id="radio8" name="verificacion"  class="css-checkbox"/>
+            <label for="radio8" class="css-label radGroup2 activo">ACTIVO</label>
+            <input type="radio" id="radio9" name="verificacion"  class="css-checkbox" />
+            <label for="radio9" class="css-label radGroup2 pensionado">PENSIONADO</label>
+            <input type="radio" id="radio10" name="verificacion"  class="css-checkbox"/>
+            <label for="radio10" class="css-label radGroup2 familiar">FAMILIAR</label>
+            <input type="radio" id="radio10-1" name="verificacion"  class="css-checkbox"/>
+            <label for="radio10-1" class="css-label radGroup2 privacion">PRIVACIÓN DE LA LIBERTAD</label>
+            <label class="time-servicio hidden">TIEMPO DE SERVICIO EN LA INSTITUCIÓN <input type="text" id="time" name="tiempo-servicio"/></label>
+            <label class="time-reserva hidden">TIEMPO DE RESERVA ACTIVA <input type="text" id="time" name="tiempo-reserva" /></label>
+            <label class="parentesco hidden">PARENTESCO CON EL ESTUDIANTE <input type="text" id="time" name="parentesco" /></label>
+            <select name="suspendido" id="select" class="suspendido hidden">
+              <option value="">SUSPENDIDO POR ACTOS DEL SERVICIO.</option>
+              <option value="">CONDENADO POR JUSTICIA ORDINARIA</option>
+            </select> 
+          </div>  
+          <div class="column-der2">
+              <label for="">NOMBRE COMPLETO <br>
+                <input type="text">
+              </label>
+              <label for="">1ER APELLIDO <br>
+                <input type="text">
+              </label>
+              <label for="">2DO APELLIDO <br>
+                <input type="text">
+              </label>
+              <label for="">CEDULA DE CIUDADANIA <br>
+                <input type="text">
+              </label>
+              <label for="">N° CELULAR DE CONTACTO<br>
+                <input type="text">
+              </label>
+              <label for="">OCUPACIÓN<br>
+                <input type="text">
+              </label>
+              <label for="" >FORMACIÓN ACADÉMICA <br>
+                <input type="text" >
+              </label>
+              <label for="" >DIRECCIÓN DE RESIDENCIA <br>
+                <input type="text" >
+              </label>
+              <label for="">MUNICIPIO <br>
+                <input type="text">
+              </label>
+              <label for="">BARRIO <br>
+                <input type="text">
+              </label>
+              <label for="">CORREO ELECTRONICO <br>
+                <input type="text">
+              </label>
+            </div>
+      <input type="button" name="previous" class="previous action-button" value="Anterior" />
+      <input type="button" name="next" class="next action-button" value="Siguiente" />
+  </fieldset>
+    <fieldset>
+      <h5><span>4</span>DATOS DEL FUNCIONARIO O PENSIONADO DE LA POLICIA NACIONAL</h5>
+          <div class="datos-funcionario">
+            <div class="campos-datos columna-izq">
+              <label for="">NOMBRE COMPLETO <br>
+                <input type="text">
+              </label>
+              <label for="">1ER APELLIDO <br>
+                <input type="text">
+              </label>
+              <label for="">2DO APELLIDO <br>
+                <input type="text">
+              </label>
+              <label for="">CEDULA DE CIUDADANIA <br>
+                <input type="text">
+              </label>
+              <label for="">DIRECCIÓN DE LA UNIDAD DONDE LABORA <br>
+                <input type="text">
+              </label>
+              <label for="" id="input-middle">N° TELEFONO <br>
+                <input type="text" >
+              </label>
+              <label for="" id="input-middle" style="margin-right:0px">BARRIO <br>
+                <input type="text">
+              </label>
+            </div>
+            <div class="campos-datos column-der">
+              <label for="">GRADO<br>
+                <input type="text">
+              </label>
+              <label for="">UNIDAD DONDE LABORA  <br>
+                <input type="text">
+              </label>
+              <label for="">CARGO <br>
+                <input type="text">
+              </label>
+              <label for="">N° CELULAR DE CONTACTO  <br>
+                <input type="text">
+              </label>
+              <label for="">CORREO ELECTRÓNICO<br>
+                <input type="text">
+              </label>
+              <label for="">DIRECCIÓN RESIDENCIA<br>
+                <input type="text">
+              </label>
+            </div>
+          </div>
+      <input type="button" name="previous" class="previous action-button" value="Anterior" />
+      <input type="button" name="next" class="next action-button" value="Siguiente" />
+  </fieldset>
+  <fieldset>
+      <h5><span>5</span>INFORMACIÓN PERSONAL (solicitante)</h5>
+      <h4 class="h4">ESTADO CIVIL</h4>
+              <div class="estado-civil">
+                <input type="radio" id="radio11" name="estado-civil"  class="css-checkbox" checked="checked" />
+                <label for="radio11" class="css-label radGroup2">SOLTERO(A)</label>
+                <input type="radio" id="radio12" name="estado-civil"  class="css-checkbox" checked="checked" />
+                <label for="radio12" class="css-label radGroup2">CASADO(A)</label>
+                <input type="radio" id="radio13" name="estado-civil"  class="css-checkbox" checked="checked" />
+                <label for="radio13" class="css-label radGroup2">VIDUO(A)</label>
+                <input type="radio" id="radio14" name="estado-civil"  class="css-checkbox" checked="checked" />
+                <label for="radio14" class="css-label radGroup2">SEPARADO(A)</label>
+                <input type="radio" id="radio15" name="estado-civil"  class="css-checkbox" checked="checked" />
+                <label for="radio15" class="css-label radGroup2">UNIÓN LIBRE</label>
+                <p class="descrip">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam convallis felis at tellus porttitor placerat. Cras iaculis, augue ut blandit venenatis, magna sem vulputate nulla, a volutpat odio tellus eu arcu. Sed dolor lorem, luctus et feugiat eget, feugiat nec purus. In lobortis consectetur tristique.
+                </p>
+              </div>
+              
+              <div class="columna-izq">
+                <h4 class="h4">N° <br> DE HIJOS</h4>
+                <select name="numero_hijos" id="select_hijos">
+                  <option value="cero">0</option>
+                  <option value="one">1</option>
+                  <option value="two">2</option>
+                  <option value="three">3</option>
+                  <option value="four">4</option>
+                  <option value="five">5</option>
+                </select>
+              </div>
+              <div class="column-der" style="width:40%;">
+                <h4 class="h4">EDADES <br> Y GENERO</h4>
+                <label>
+                  <input type="number" name="hijo-edad1" class="hijo1 hidden">
+                  <input type="radio" id="radio16" name="hijo-genero1"  class="css-checkbox"/>
+                  <label for="radio16" class="css-label radGroup2 hijo1 hidden">M</label>
+                  <input type="radio" id="radio17" name="hijo-genero1"  class="css-checkbox"/>
+                  <label for="radio17" class="css-label radGroup2 hijo1 hidden">F</label>
+                </label> 
+                <label>
+                  <input type="number" name="hijo-edad2" class="hijo2 hidden">
+                  <input type="radio" id="radio18" name="hijo-genero2"  class="css-checkbox"/>
+                  <label for="radio18" class="css-label radGroup2 hijo2 hidden">M</label>
+                  <input type="radio" id="radio19" name="hijo-genero2"  class="css-checkbox"/>
+                  <label for="radio19" class="css-label radGroup2 hijo2 hidden">F</label>
+                </label> 
+                <label>
+                  <input type="number" name="hijo-edad3" class="hijo3 hidden">
+                  <input type="radio" id="radio20" name="hijo-genero3"  class="css-checkbox"/>
+                  <label for="radio20" class="css-label radGroup2 hijo3 hidden">M</label>
+                  <input type="radio" id="radio21" name="hijo-genero3"  class="css-checkbox"/>
+                  <label for="radio21" class="css-label radGroup2 hijo3 hidden">F</label>
+                </label>
+                <label>
+                  <input type="number" name="hijo-edad4" class="hijo4 hidden">
+                  <input type="radio" id="radio22" name="hijo-genero4"  class="css-checkbox"/>
+                  <label for="radio22" class="css-label radGroup2 hijo4 hidden">M</label>
+                  <input type="radio" id="radio23" name="hijo-genero4"  class="css-checkbox"/>
+                  <label for="radio23" class="css-label radGroup2 hijo4 hidden">F</label>
+                </label>
+                <label>
+                  <input type="number" name="hijo-edad5" class="hijo5 hidden">
+                  <input type="radio" id="radio22-1" name="hijo-genero5"  class="css-checkbox"/>
+                  <label for="radio22-1" class="css-label radGroup2 hijo5 hidden">M</label>
+                  <input type="radio" id="radio23-1" name="hijo-genero5"  class="css-checkbox"/>
+                  <label for="radio23-1" class="css-label radGroup2 hijo5 hidden">F</label>
+                </label>
+              </div>
+              <div class="column-grados">
+                  <h4 class="h4">GRADOS EN LOS QUE ESTUDIAN</h4>
+                  <input type="number" class="hijo1 hidden">
+                  <input type="number" class="hijo2 hidden">
+                  <input type="number" class="hijo3 hidden">
+                  <input type="number" class="hijo4 hidden">
+                  <input type="number" class="hijo5 hidden">  
+              </div>
+              <div class="tipo-vivienda">
+                <h4 class="h4">TIPO VIVIENDA</h4>
+                <input type="radio" id="radio24" name="tipo-vivienda"  class="css-checkbox" checked="checked" />
+                <label for="radio24" class="css-label radGroup2">PROPIA</label>
+                <input type="radio" id="radio25" name="tipo-vivienda"  class="css-checkbox" checked="checked" />
+                <label for="radio25" class="css-label radGroup2">FAMILIAR</label>
+                <input type="radio" id="radio26" name="tipo-vivienda"  class="css-checkbox" checked="checked" />
+                <label for="radio26" class="css-label radGroup2">ARRIENDO</label>
+                <input type="radio" id="radio27" name="tipo-vivienda"  class="css-checkbox" checked="checked" />
+                <label for="radio27" class="css-label radGroup2">FISCAL</label>
+              </div>
+              <div class="columna-izq">
+                <h4 class="h4">TIENE HIJOS ESTUDIANDO EN COLEGIO DE LA POLICIA</h4>
+                <input type="radio" id="radio28" name="hijos-colegio"  class="css-checkbox" checked="checked" />
+                <label for="radio28" class="css-label radGroup2">SI</label>
+                <input type="radio" id="radio29" name="hijos-colegio"  class="css-checkbox" checked="checked" />
+                <label for="radio29" class="css-label radGroup2">NO</label>
+              </div>
+              <div class="column-der">
+                <h4 class="h4">GRADOS EN LOS QUE ESTUDIAN</h4>
+                <input type="number" name="grados-estudian1">
+                <input type="number" name="grados-estudian2">
+                <input type="number" name="grados-estudian3">
+                <input type="number" name="grados-estudian4">
+              </div>
+      <input type="button" name="previous" class="previous action-button" value="Anterior" />
+      <input type="button" name="next" class="next action-button" value="Siguiente" />
+  </fieldset>
+  <fieldset>  
+      <h5><span>6</span>ASPECTO ECONÓMICO FAMILIAR</h5> 
+      <div class="columna-izq">
+        <h4>INGRESOS</h4>
+        <p class="concepto">CONCEPTO</p>
+        <p class="valor">VALOR</p>
+        <input type="text" name="ingresos-concepto1" class="col-izq">
+        <input type="number" name="ingresos-valor1" class="col-der">  
+        <input type="text" name="ingresos-concepto2" class="col-izq">
+        <input type="number" name="ingresos-valor2" class="col-der">  
+        <input type="text" name="ingresos-concepto3" class="col-izq">
+        <input type="number" name="ingresos-valor3" class="col-der">  
+        <input type="text" name="ingresos-concepto4" class="col-izq">
+        <input type="number" name="ingresos-valor4" class="col-der">  
+        <input type="text" name="ingresos-concepto5" class="col-izq">
+        <input type="number" name="ingresos-valor5" class="col-der">  
+        <input type="text" name="ingresos-concepto6" class="col-izq">
+        <input type="number" name="ingresos-valor6" class="col-der">  
+        <input type="text" name="ingresos-concepto7" class="col-izq">
+        <input type="number" name="ingresos-valor7" class="col-der">  
+        <input type="text" name="ingresos-concepto8" class="col-izq">
+        <input type="number" name="ingresos-valor8" class="col-der">  
+        <input type="text" name="ingresos-total" placeholder="TOTAL INGRESOS FAMILIARES">
+      </div>
+      <div class="column-der">
+        <h4>EGRESOS</h4>
+        <p class="concepto">CONCEPTO</p>
+        <p class="valor">VALOR</p>
+        <input type="text" name="egresos-concepto1" class="col-izq">
+        <input type="number" name="egresos-valor1" class="col-der">  
+        <input type="text" name="egresos-concepto2" class="col-izq">
+        <input type="number" name="egresos-valor2" class="col-der">  
+        <input type="text" name="egresos-concepto3" class="col-izq">
+        <input type="number" name="egresos-valor3" class="col-der">  
+        <input type="text" name="egresos-concepto4" class="col-izq">
+        <input type="number" name="egresos-valor4" class="col-der">  
+        <input type="text" name="egresos-concepto5" class="col-izq">
+        <input type="number" name="egresos-valor5" class="col-der">  
+        <input type="text" name="egresos-concepto6" class="col-izq" value="Estudios Superiores" placeholder="Estudios Superiores" disabled>
+        <input type="number" name="egresos-valor6" class="col-der">  
+        <input type="text" name="egresos-concepto7" class="col-izq" value="Compra o Mejora de Vivienda" placeholder="Compra o Mejora de Vivienda" disabled>
+        <input type="number" name="egresos-valor7" class="col-der" >  
+        <input type="text" name="egresos-concepto8" class="col-izq"value="Otros Cuales..?" placeholder="Otros Cuales?" disabled >
+        <input type="number" name="egresos-valor8" class="col-der" >  
+        <input type="text" name="ingresos-total" placeholder="TOTAL EGRESOS FAMILIARES">
+      </div> 
+      <input type="button" name="previous" class="previous action-button" value="Anterior" />
+      <input type="button" name="next" class="next action-button" value="Siguiente" />
+  </fieldset>
+  <fieldset>
+      <h5><span>7</span>INFORMACIÓN DEL ASPIRANTE AL BENEFICIO (ESTUDIANTE)</h5>
+      <label class="top" for="">NOMBRES COMPLETOS <br>
+        <input type="text" name="educacion_nombres">
+      </label>  
+      <label class="top" for="">APELLIDOS COMPLETOS <br>
+        <input type="text" name="educacion_apellidos">
+      </label>
+      <p>DOCUMENTO DE IDENTIDAD DEL ESTUDIANTE</p>
+      <label class="mitad" for="">REGISTRO CIVIL <br>
+        <input type="number" name="educacion_identidad">
+      </label>
+      <label class="mitad" for="">TARJETA DE IDENTIDAD <br>
+        <input type="number" name="educacion_identidad">
+      </label>
+      <label class="mitad" for="">CEDULA DE CIUDADANIA<br>
+        <input type="number" name="educacion_identidad">
+      </label>
+      <label class="row">
+        GENERO <br>
+        <input type="radio" id="radio30" name="educacion_genero"  class="css-checkbox" checked="checked" />
+        <label for="radio30" class="css-label radGroup2 radio30">FEMENINO</label>
+        <input type="radio" id="radio31" name="educacion_genero"  class="css-checkbox" checked="checked" />
+        <label for="radio31" class="css-label radGroup2 radio30">MASCULINO</label>
+      </label>
+       <label class="row2">
+        GRADO ACTUAL <br>
+        <input type="text">
+      </label>
+      <label class="row_izq" for="">INSTITUCIÓN EDUCATIVA EN LA QUE ESTUDIA ACTUALMENTE <br>
+        <input type="text" name="educacion_institucion">
+      </label>
+      <label class="row_der" for="">TELEFONO <br>
+        <input type="number" name="educacion_telefono">
+      </label>
+      <label class="row_izq" for="">DIRECCIÓN <br>
+        <input type="text" name="educacion_direccion">
+      </label>
+      <label class="row_der" for="">MUNICIPIO <br>
+        <input type="text" name="educacion_municipio">
+      </label>
+      <label class="row_izq" for="">INSTITUCIÓN EDUCATIVA A LA QUE ASPIRA ESTUDIAR EL PROXIMO GRADO <br>
+        <input type="text" name="educacion_institucion2">
+      </label>
+      <label class="row_der" for="">TELEFONO <br>
+        <input type="number" name="educacion_telefono2">
+      </label>
+      <label class="row_izq" for="">DIRECCIÓN <br>
+        <input type="text" name="educacion_direccion2">
+      </label>
+      <label class="row_der" for="">MUNICIPIO <br>
+        <input type="text" name="educacion_municipio2">
+      </label>
+      
+      <input type="button" name="previous" class="previous action-button" value="Anterior" />
+      <input type="button" name="next" class="next action-button" value="Siguiente" />
+  </fieldset>
+<fieldset>
+      <h5><span>8</span>BENEFICIO QUE SOLICITA</h5>
+      <p class="descrip">Si la persona no ha recibido ningún apoyo puede aprobar a todos.</p>
+        <div class="beneficio">
+          <input type="radio" id="radio32" name="educacion_beneficio"  class="css-checkbox" checked="checked" />
+          <label for="radio32" class="css-label radGroup2 pension">PENSIÓN</label>
+          <input type="radio" id="radio33" name="educacion_beneficio"  class="css-checkbox" />
+          <label for="radio33" class="css-label radGroup2 transporte">TRANSPORTE</label>
+          <input type="radio" id="radio34" name="educacion_beneficio"  class="css-checkbox" />
+          <label for="radio34" class="css-label radGroup2 refrigerio">REFRIGERIO</label>
+          <input type="radio" id="radio35" name="educacion_beneficio"  class="css-checkbox" />
+          <label for="radio35" class="css-label radGroup2 utiles">UTILES ESCOLARES</label>
+          <input type="radio" id="radio36" name="educacion_beneficio"  class="css-checkbox" />
+          <label for="radio36" class="css-label radGroup2 uniforme">UNIFORMES</label>
+        </div>
+          <div class="tallas hidden">
+            <h3>EN CASO DE SER APROBADO EL BENEFICIO DE UNIFORME (INDIQUE LAS TALLAS)</h3>
+            <label  for="">CAMISA<br>
+            <input type="text" name="talla_camisa">
+            </label>
+            <label  for="">PANTALON<br>
+            <input type="text" name="talla_pantalon">
+            </label>
+            <label  for="">SUDADERA<br>
+            <input type="text" name="talla_sudadera">
+            </label>
+            <label  for="">BUSO<br>
+            <input type="text" name="talla_buso">
+            </label>
+            <label  for="">ZAPATOS<br>
+            <input type="text" name="talla_zapatos">
+            </label>
+          </div>
+        <label class="file"> CARGAR ARCHIVOS PARA ADJUNTOS <br>
+          <input type="file">
+        </label>
+        <label class="file"> CARGAR FOTO PERFIL <br>
+          <input type="file">
+        </label>
+      <input type="button" name="previous" class="previous action-button" value="ANTERIOR" />
+      <input type="submit" name="submit" class="submit action-button" value="ENVIAR" />
+</fieldset>
+  </form>
+      <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+      <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+      <script src="js/index.js"></script>
+</section>
+<footer>
+<section>
+    <h3>ADJUNTOS:</h3> 
+      <li> Adquirir y diligenciar el formulario. </li>
+      <li>Fotocopia del documento de identificación y carné del beneficiario de
+        la Policía Nacional.</li>
+      <li> Últimos dos (2) desprendibles de pago del solicitante. En caso de ser
+        Madre de Familia deberá aportar copia del documento de
+        conciliación o demanda por cuota alimentaria o recibo
+        del aporte del policía o pensionado para la manutención
+        del estudiante.</li>
+      <li>Diagnóstico médico reciente donde se evidencia la condición de
+        salud actual del beneficiario; indispensable para el programa de
+        educación especial Valentina “Te Sonríe”.</li>
+      <li>Una fotografía actualizada del estudiante en tamaño 3X4.</li>
+      <li>Cotización de los beneficios que solicita para el año 2017.</li>
+      <li>Certificación de convivencia expedida y firmada por el Rector del
+        plantel Educativo. Se exige solo para el programa de Educación Plan
+        Padrino.</li> 
+      <li>Copia del último boletín periodo académico cursado (plan
+        padrino).Se exige solo para el programa de Educación Plan Padrino.</li>
+      <li>Certificación afiliación a Bienestar Social.</li>
+    </section>
+</footer>    
+</body>
+</html>
