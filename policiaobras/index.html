@@ -15,17 +15,18 @@
     </div>
 <section class="contenedor">    
   <!-- multistep form -->
-  <form id="msform">
+  <form id="msform" action="insertar.php" method="post" >
+
     <!--Paso Numero Uno-->
     <fieldset>
       <h5><span>1</span>PROGRAMA DE EDUCACIÓN AL QUE APLICA</h5>
           <div class="plan">
-            <input type="radio" name="programa" id="radio2" class="css-checkbox" checked="checked"/> 
+            <input type="radio" name="programa" id="radio2" class="css-checkbox" value="Plan padrino" checked="checked"/> 
             <label for="radio2" class="css-label radGroup1 plan-padri">PLAN PADRINO</label>
             <p class="descrip">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam convallis felis at tellus porttitor placerat. Cras iaculis, augue ut blandit venenatis, magna sem vulputate nulla, a volutpat odio tellus eu arcu. Sed dolor lorem, luctus et feugiat eget, feugiat nec purus. In lobortis consectetur tristique.</p>
           </div>
           <div class="plan">
-            <input type="radio" name="programa" id="radio3" class="css-checkbox" />
+            <input type="radio" name="programa" id="radio3" class="css-checkbox" value="Valentina sonrie" />
             <label for="radio3" class="css-label radGroup1 plan-vale">VALENTINA TE SONRIE</label>
             <p class="descrip">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam convallis felis at tellus porttitor placerat. Cras iaculis, augue ut blandit venenatis, magna sem vulputate nulla, a volutpat odio tellus eu arcu. Sed dolor lorem, luctus et feugiat eget, feugiat nec purus. In lobortis consectetur tristique.</p>
           </div>
@@ -38,9 +39,9 @@
         <p class="descrip mike2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam convallis felis at tellus porttitor placerat. Cras iaculis, augue ut blandit venenatis, magna sem vulputate nulla, a volutpat odio tellus eu arcu. Sed dolor lorem, luctus et feugiat eget, feugiat nec purus. In lobortis consectetur tristique.</p>
       </div>
       <div class="column-der mike2" style="padding-top:56px;">
-        <input type="radio" id="radio4" name="verificacion"  class="css-checkbox mike2" checked="checked" />
+        <input type="radio" id="radio4" name="antecedentes_clinicicos"  value="SI" class="css-checkbox mike2" checked="checked" />
         <label for="radio4" class="css-label radGroup2 mike2">SI</label>
-        <input type="radio" id="radio5" name="verificacion"  class="css-checkbox" />
+        <input type="radio" id="radio5" name="antecedentes_clinicicos"  value="NO" class="css-checkbox" />
         <label for="radio5" class="css-label radGroup2 mike2">NO</label>
       </div>
       <!--FIN OPCIONES PLAN PADRINO-->   
@@ -50,19 +51,19 @@
         <p class="descrip mike hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam convallis felis at tellus porttitor placerat. Cras iaculis, augue ut blandit venenatis, magna sem vulputate nulla, a volutpat odio tellus eu arcu. Sed dolor lorem, luctus et feugiat eget, feugiat nec purus. In lobortis consectetur tristique.</p>
       </div>
       <div class="column-der mike hidden">
-        <select name="autismo" id="select" class="mike hidden">
+        <select name="diagnostico_medico" id="select" class="mike hidden">
           <option value=""></option>
           <option value="autismo">Autismo</option>
-          <option value="coeficiente-intelectual">Coeficiente intelectual avanzado</option>
-          <option value="paralisis-cerebral">Paralisis cerebral</option>
-          <option value="retardo-mental">Retardo Mental</option>
+          <option value="coeficiente intelectual">Coeficiente intelectual avanzado</option>
+          <option value="paralisis cerebral">Paralisis cerebral</option>
+          <option value="retardo mental">Retardo Mental</option>
           <option value="hipoacusia">Hipoacusia</option>
-          <option value="problema-aprendizaje">Problema de Aprendizaje</option>
-          <option value="sindrome-down">Sindrome de Down</option>
+          <option value="problema aprendizaje">Problema de Aprendizaje</option>
+          <option value="sindrome down">Sindrome de Down</option>
           <option value="epilepsia">Epilepsia</option>
           <option value="otro" class="otro">Otro Cual?</option>
         </select>
-        <input type="text" placeholder="Cual?" class="juanito hidden">
+        <input name="otro" type="text" placeholder="Cual?" class="juanito hidden">
       <!-- FIN OPCIONES PLAN VALENTINA -->
       </div>
       <input type="button" name="previous" class="previous action-button" value="Anterior" />
@@ -76,25 +77,25 @@
           </p>
         </div> 
         <div class="column-der">
-          <input type="radio" id="radio6" name="verificacion"  class="css-checkbox"/>
-          <label for="radio6" id="radio6-1" class="css-label radGroup2">SI</label>
-          <input type="radio" id="radio7" name="verificacion"  class="css-checkbox" checked="checked" />
-          <label for="radio7" id="radio7-1" class="css-label radGroup2">NO</label>
+          <input type="radio" id="radio6" name="donaciones"  class="css-checkbox" value="SI"/>
+          <label for="radio6" id="radio6-1" class="css-label radGroup2" name="donaciones" >SI</label>
+          <input type="radio" id="radio7" name="donaciones"  class="css-checkbox" checked="checked" value="NO"/>
+          <label for="radio7" id="radio7-1" class="css-label radGroup2" name="donaciones" >NO</label>
           <select name="entidad" id="select2" class="event hidden ">
-              <option value="">AOS</option>
-              <option value="">BECA BIESO</option>
-              <option value="">CORAZON VERDE</option>
-              <option value="">CORPORACION</option>
-              <option value="">MATAMORROS</option>
-              <option value="">DIRECCION DE SANIDAD</option>
-              <option value="">ESTADO</option>
-              <option value="">OTRAS</option>  
+              <option value="AOS">AOS</option>
+              <option value="BECA BIESO">BECA BIESO</option>
+              <option value="CORAZON VERDE">CORAZON VERDE</option>
+              <option value="CORPORACION">CORPORACION</option>
+              <option value="MATAMORROS">MATAMORROS</option>
+              <option value="DIRECCION DE SANIDAD">DIRECCION DE SANIDAD</option>
+              <option value="ESTADO">ESTADO</option>
+              <option value="OTRAS">OTRAS</option>  
           </select>
           <div class="event hidden"> 
             ¿DURANTE CUÁNTO TIEMPO? <br>
-            <input type="text"> <br>
+            <input type="text" name="entidad_tiempo"> <br>
             ¿QUE BENEFICIOS OBTUVO? <br>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <textarea name="entidad_beneficio" id="" cols="30" rows="10"></textarea>
           </div>  
         </div> 
       <input type="button" name="previous" class="previous action-button" value="Anterior" />
@@ -106,20 +107,20 @@
             <p class="descrip">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam convallis felis at tellus porttitor placerat. Cras iaculis, augue ut blandit venenatis, magna sem vulputate nulla, a volutpat odio tellus eu arcu. Sed dolor lorem, luctus et feugiat eget, feugiat nec purus. In lobortis consectetur tristique.
             </p>
-            <input type="radio" id="radio8" name="verificacion"  class="css-checkbox"/>
+            <input type="radio" id="radio8" name="estado" value="ACTIVO" class="css-checkbox"/>
             <label for="radio8" class="css-label radGroup2 activo">ACTIVO</label>
-            <input type="radio" id="radio9" name="verificacion"  class="css-checkbox" />
+            <input type="radio" id="radio9" name="estado" value="PENSIONADO"   class="css-checkbox" />
             <label for="radio9" class="css-label radGroup2 pensionado">PENSIONADO</label>
-            <input type="radio" id="radio10" name="verificacion"  class="css-checkbox"/>
+            <input type="radio" id="radio10" name="estado" value="FAMILIAR"  class="css-checkbox"/>
             <label for="radio10" class="css-label radGroup2 familiar">FAMILIAR</label>
-            <input type="radio" id="radio10-1" name="verificacion"  class="css-checkbox"/>
+            <input type="radio" id="radio10-1" name="estado" value="PRIVACIÓN DE LA LIBERTAD"  class="css-checkbox"/>
             <label for="radio10-1" class="css-label radGroup2 privacion">PRIVACIÓN DE LA LIBERTAD</label>
-            <label class="time-servicio hidden">TIEMPO DE SERVICIO EN LA INSTITUCIÓN <input type="text" id="time" name="tiempo-servicio"/></label>
-            <label class="time-reserva hidden">TIEMPO DE RESERVA ACTIVA <input type="text" id="time" name="tiempo-reserva" /></label>
-            <label class="parentesco hidden">PARENTESCO CON EL ESTUDIANTE <input type="text" id="time" name="parentesco" /></label>
-            <select name="suspendido" id="select" class="suspendido hidden">
-              <option value="">SUSPENDIDO POR ACTOS DEL SERVICIO.</option>
-              <option value="">CONDENADO POR JUSTICIA ORDINARIA</option>
+            <label class="time-servicio hidden">TIEMPO DE SERVICIO EN LA INSTITUCIÓN <input type="text" id="time" name="activo_tiempo"/></label>
+            <label class="time-reserva hidden">TIEMPO DE RESERVA ACTIVA <input type="text" id="time" name="pensionado_tiempo" /></label>
+            <label class="parentesco hidden">PARENTESCO CON EL ESTUDIANTE <input type="text" id="time" name="parentesco_estudiante" /></label>
+            <select name="privacion_libertad" id="select" class="suspendido hidden">
+              <option value="SUSPENDIDO POR ACTOS DEL SERVICIO">SUSPENDIDO POR ACTOS DEL SERVICIO.</option>
+              <option value="CONDENADO POR JUSTICIA ORDINARIA">CONDENADO POR JUSTICIA ORDINARIA</option>
             </select> 
           </div>  
           <div class="column-der2">
@@ -462,6 +463,7 @@
       <input type="button" name="previous" class="previous action-button" value="ANTERIOR" />
       <input type="submit" name="submit" class="submit action-button" value="ENVIAR" />
 </fieldset>
+<input type="submit" name="submit" class="submit action-button" value="ENVIAR" />
   </form>
       <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
       <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
