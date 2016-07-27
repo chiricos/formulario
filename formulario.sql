@@ -126,6 +126,9 @@ CREATE TABLE `datos` (
   `economico_egresos_valor_7` int(20)  NULL,
   `economico_egresos_valor_8` int(20)  NULL,
   `economico_egresos_total` int(20)  NULL,
+  `estudiante_nombres` varchar(50) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `estudiante_apellidos` varchar(50) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `estudiante_registro_civil` int(20)  NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 

@@ -84,7 +84,25 @@ mysql_query("INSERT INTO datos (
           economico_ingresos_valor_5,
           economico_ingresos_valor_6,
           economico_ingresos_valor_7,
-          economico_ingresos_valor_8
+          economico_ingresos_valor_8,
+          economico_ingresos_total,
+          economico_egresos_concepto_1,
+          economico_egresos_concepto_2,
+          economico_egresos_concepto_3,
+          economico_egresos_concepto_4,
+          economico_egresos_concepto_5,
+          economico_egresos_concepto_6,
+          economico_egresos_concepto_7,
+          economico_egresos_concepto_8,
+          economico_egresos_valor_1,
+          economico_egresos_valor_2,
+          economico_egresos_valor_3,
+          economico_egresos_valor_4,
+          economico_egresos_valor_5,
+          economico_egresos_valor_6,
+          economico_egresos_valor_7,
+          economico_egresos_valor_8,
+          economico_egresos_total
           ) VALUES (
           '$_POST[condiciones]',
           '$_POST[programa]',
@@ -163,38 +181,7 @@ mysql_query("INSERT INTO datos (
           '$_POST[economico_ingresos_valor_5]',
           '$_POST[economico_ingresos_valor_6]',
           '$_POST[economico_ingresos_valor_7]',
-          '$_POST[economico_ingresos_valor_8]'
-         )",$con);
-    echo "datos insertados";
-
-
-
-
-
-?>
-
-drawde entro
-
-,
-          economico_ingresos_total,
-          economico_egresos_concepto_1,
-          economico_egresos_concepto_2,
-          economico_egresos_concepto_3,
-          economico_egresos_concepto_4,
-          economico_egresos_concepto_5,
-          economico_egresos_concepto_6,
-          economico_egresos_concepto_7,
-          economico_egresos_concepto_8,
-          economico_egresos_valor_1,
-          economico_egresos_valor_2,
-          economico_egresos_valor_3,
-          economico_egresos_valor_4,
-          economico_egresos_valor_5,
-          economico_egresos_valor_6,
-          economico_egresos_valor_7,
-          economico_egresos_valor_8,
-          economico_egresos_total
-,
+          '$_POST[economico_ingresos_valor_8]',
           '$_POST[economico_ingresos_total]',
           '$_POST[economico_egresos_concepto_1]',
           '$_POST[economico_egresos_concepto_2]',
@@ -213,3 +200,16 @@ drawde entro
           '$_POST[economico_egresos_valor_7]',
           '$_POST[economico_egresos_valor_8]',
           '$_POST[economico_egresos_total]'
+
+         )",$con);
+    echo "datos insertados";
+
+
+
+
+
+?>
+
+drawde entro
+
+
