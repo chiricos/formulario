@@ -125,37 +125,37 @@
           </div>  
           <div class="column-der2">
               <label for="">NOMBRE COMPLETO <br>
-                <input type="text">
+                <input type="text" name="solicitante_nombres">
               </label>
               <label for="">1ER APELLIDO <br>
-                <input type="text">
+                <input type="text" name="solicitante_primer_apellido">
               </label>
               <label for="">2DO APELLIDO <br>
-                <input type="text">
+                <input type="text" name="solicitante_segundo_apellido">
               </label>
               <label for="">CEDULA DE CIUDADANIA <br>
-                <input type="text">
+                <input type="text" name="solicitante_cedula">
               </label>
               <label for="">N° CELULAR DE CONTACTO<br>
-                <input type="text">
+                <input type="text" name="solicitante_celular">
               </label>
               <label for="">OCUPACIÓN<br>
-                <input type="text">
+                <input type="text" name="solicitante_ocupacion">
               </label>
               <label for="" >FORMACIÓN ACADÉMICA <br>
-                <input type="text" >
+                <input type="text" name="solicitante_formacion">
               </label>
               <label for="" >DIRECCIÓN DE RESIDENCIA <br>
-                <input type="text" >
+                <input type="text" name="solicitante_direccion">
               </label>
               <label for="">MUNICIPIO <br>
-                <input type="text">
+                <input type="text" name="solicitante_municipio">
               </label>
               <label for="">BARRIO <br>
-                <input type="text">
+                <input type="text" name="solicitante_barrio">
               </label>
               <label for="">CORREO ELECTRONICO <br>
-                <input type="text">
+                <input type="text" name="solicitante_correo">
               </label>
             </div>
       <input type="button" name="previous" class="previous action-button" value="Anterior" />
@@ -166,45 +166,45 @@
           <div class="datos-funcionario">
             <div class="campos-datos columna-izq">
               <label for="">NOMBRE COMPLETO <br>
-                <input type="text">
+                <input type="text" name="funcionario_nombres">
               </label>
               <label for="">1ER APELLIDO <br>
-                <input type="text">
+                <input type="text" name="funcionario_primer_apellido">
               </label>
               <label for="">2DO APELLIDO <br>
-                <input type="text">
+                <input type="text" name="funcionario_segundo_apellido">
               </label>
               <label for="">CEDULA DE CIUDADANIA <br>
-                <input type="text">
+                <input type="text" name="funcionario_cedula">
               </label>
               <label for="">DIRECCIÓN DE LA UNIDAD DONDE LABORA <br>
-                <input type="text">
+                <input type="text" name="funcionario_direccion_labora">
               </label>
               <label for="" id="input-middle">N° TELEFONO <br>
-                <input type="text" >
+                <input type="text" name="funcionario_telefono">
               </label>
               <label for="" id="input-middle" style="margin-right:0px">BARRIO <br>
-                <input type="text">
+                <input type="text" name="funcionario_barrio">
               </label>
             </div>
             <div class="campos-datos column-der">
               <label for="">GRADO<br>
-                <input type="text">
+                <input type="text" name="funcionario_grado">
               </label>
               <label for="">UNIDAD DONDE LABORA  <br>
-                <input type="text">
+                <input type="text" name="funcionario_unidad_labora">
               </label>
               <label for="">CARGO <br>
-                <input type="text">
+                <input type="text" name="funcionario_cargo">
               </label>
               <label for="">N° CELULAR DE CONTACTO  <br>
-                <input type="text">
+                <input type="text" name="funcionario_celular">
               </label>
               <label for="">CORREO ELECTRÓNICO<br>
-                <input type="text">
+                <input type="text" name="funcionario_correo">
               </label>
               <label for="">DIRECCIÓN RESIDENCIA<br>
-                <input type="text">
+                <input type="text" name="funcionario_direccion">
               </label>
             </div>
           </div>
@@ -215,15 +215,15 @@
       <h5><span>5</span>INFORMACIÓN PERSONAL (solicitante)</h5>
       <h4 class="h4">ESTADO CIVIL</h4>
               <div class="estado-civil">
-                <input type="radio" id="radio11" name="estado-civil"  class="css-checkbox" checked="checked" />
+                <input type="radio" id="radio11" name="solicitante_estado_civil"  class="css-checkbox" checked="checked" value="SOLTERO(A)" />
                 <label for="radio11" class="css-label radGroup2">SOLTERO(A)</label>
-                <input type="radio" id="radio12" name="estado-civil"  class="css-checkbox" checked="checked" />
+                <input type="radio" id="radio12" name="solicitante_estado_civil"  class="css-checkbox" checked="checked" value="CASADO(A)" />
                 <label for="radio12" class="css-label radGroup2">CASADO(A)</label>
-                <input type="radio" id="radio13" name="estado-civil"  class="css-checkbox" checked="checked" />
+                <input type="radio" id="radio13" name="solicitante_estado_civil"  class="css-checkbox" checked="checked" value="VIDUO(A)" />
                 <label for="radio13" class="css-label radGroup2">VIDUO(A)</label>
-                <input type="radio" id="radio14" name="estado-civil"  class="css-checkbox" checked="checked" />
+                <input type="radio" id="radio14" name="solicitante_estado_civil"  class="css-checkbox" checked="checked" value="SEPARADO(A)" />
                 <label for="radio14" class="css-label radGroup2">SEPARADO(A)</label>
-                <input type="radio" id="radio15" name="estado-civil"  class="css-checkbox" checked="checked" />
+                <input type="radio" id="radio15" name="solicitante_estado_civil"  class="css-checkbox" checked="checked" value="UNIÓN LIBRE" />
                 <label for="radio15" class="css-label radGroup2">UNIÓN LIBRE</label>
                 <p class="descrip">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam convallis felis at tellus porttitor placerat. Cras iaculis, augue ut blandit venenatis, magna sem vulputate nulla, a volutpat odio tellus eu arcu. Sed dolor lorem, luctus et feugiat eget, feugiat nec purus. In lobortis consectetur tristique.
@@ -232,7 +232,7 @@
               
               <div class="columna-izq">
                 <h4 class="h4">N° <br> DE HIJOS</h4>
-                <select name="numero_hijos" id="select_hijos">
+                <select name="solicitante_hijos" id="select_hijos">
                   <option value="cero">0</option>
                   <option value="one">1</option>
                   <option value="two">2</option>
@@ -244,73 +244,73 @@
               <div class="column-der" style="width:40%;">
                 <h4 class="h4">EDADES <br> Y GENERO</h4>
                 <label>
-                  <input type="number" name="hijo-edad1" class="hijo1 hidden">
-                  <input type="radio" id="radio16" name="hijo-genero1"  class="css-checkbox"/>
+                  <input type="number" name="solicitante_hijo_edad_1" class="hijo1 hidden">
+                  <input type="radio" id="radio16" name="solicitante_hijo_genero_1"  class="css-checkbox" value="Masculino" />
                   <label for="radio16" class="css-label radGroup2 hijo1 hidden">M</label>
-                  <input type="radio" id="radio17" name="hijo-genero1"  class="css-checkbox"/>
+                  <input type="radio" id="radio17" name="solicitante_hijo_genero_1"  class="css-checkbox" value="Femenino"/>
                   <label for="radio17" class="css-label radGroup2 hijo1 hidden">F</label>
                 </label> 
                 <label>
-                  <input type="number" name="hijo-edad2" class="hijo2 hidden">
-                  <input type="radio" id="radio18" name="hijo-genero2"  class="css-checkbox"/>
+                  <input type="number" name="solicitante_hijo_edad_2" class="hijo2 hidden">
+                  <input type="radio" id="radio18" name="solicitante_hijo_genero_2"  class="css-checkbox" value="Masculino"/>
                   <label for="radio18" class="css-label radGroup2 hijo2 hidden">M</label>
-                  <input type="radio" id="radio19" name="hijo-genero2"  class="css-checkbox"/>
+                  <input type="radio" id="radio19" name="solicitante_hijo_genero_2"  class="css-checkbox" value="Femenino"/>
                   <label for="radio19" class="css-label radGroup2 hijo2 hidden">F</label>
                 </label> 
                 <label>
-                  <input type="number" name="hijo-edad3" class="hijo3 hidden">
-                  <input type="radio" id="radio20" name="hijo-genero3"  class="css-checkbox"/>
+                  <input type="number" name="solicitante_hijo_edad_3" class="hijo3 hidden">
+                  <input type="radio" id="radio20" name="solicitante_hijo_genero_3"  class="css-checkbox" value="Masculino"/>
                   <label for="radio20" class="css-label radGroup2 hijo3 hidden">M</label>
-                  <input type="radio" id="radio21" name="hijo-genero3"  class="css-checkbox"/>
+                  <input type="radio" id="radio21" name="solicitante_hijo_genero_3"  class="css-checkbox" value="Femenino"/>
                   <label for="radio21" class="css-label radGroup2 hijo3 hidden">F</label>
                 </label>
                 <label>
-                  <input type="number" name="hijo-edad4" class="hijo4 hidden">
-                  <input type="radio" id="radio22" name="hijo-genero4"  class="css-checkbox"/>
+                  <input type="number" name="solicitante_hijo_edad_4" class="hijo4 hidden">
+                  <input type="radio" id="radio22" name="solicitante_hijo_genero_4"  class="css-checkbox" value="Masculino"/>
                   <label for="radio22" class="css-label radGroup2 hijo4 hidden">M</label>
-                  <input type="radio" id="radio23" name="hijo-genero4"  class="css-checkbox"/>
+                  <input type="radio" id="radio23" name="solicitante_hijo_genero_4"  class="css-checkbox" value="Femenino"/>
                   <label for="radio23" class="css-label radGroup2 hijo4 hidden">F</label>
                 </label>
                 <label>
-                  <input type="number" name="hijo-edad5" class="hijo5 hidden">
-                  <input type="radio" id="radio22-1" name="hijo-genero5"  class="css-checkbox"/>
+                  <input type="number" name="solicitante_hijo_edad_5" class="hijo5 hidden">
+                  <input type="radio" id="radio22-1" name="solicitante_hijo_genero_5"  class="css-checkbox" value="Masculino"/>
                   <label for="radio22-1" class="css-label radGroup2 hijo5 hidden">M</label>
-                  <input type="radio" id="radio23-1" name="hijo-genero5"  class="css-checkbox"/>
+                  <input type="radio" id="radio23-1" name="solicitante_hijo_genero_5"  class="css-checkbox" value="Femenino"/>
                   <label for="radio23-1" class="css-label radGroup2 hijo5 hidden">F</label>
                 </label>
               </div>
               <div class="column-grados">
                   <h4 class="h4">GRADOS EN LOS QUE ESTUDIAN</h4>
-                  <input type="number" class="hijo1 hidden">
-                  <input type="number" class="hijo2 hidden">
-                  <input type="number" class="hijo3 hidden">
-                  <input type="number" class="hijo4 hidden">
-                  <input type="number" class="hijo5 hidden">  
+                  <input type="number" class="hijo1 hidden" name="solicitante_hijo_grado_1">
+                  <input type="number" class="hijo2 hidden" name="solicitante_hijo_grado_2">
+                  <input type="number" class="hijo3 hidden" name="solicitante_hijo_grado_3">
+                  <input type="number" class="hijo4 hidden" name="solicitante_hijo_grado_4">
+                  <input type="number" class="hijo5 hidden" name="solicitante_hijo_grado_5">  
               </div>
               <div class="tipo-vivienda">
                 <h4 class="h4">TIPO VIVIENDA</h4>
-                <input type="radio" id="radio24" name="tipo-vivienda"  class="css-checkbox" checked="checked" />
+                <input type="radio" id="radio24" name="solicitante_vivienda"  class="css-checkbox" checked="checked" value="PROPIA" />
                 <label for="radio24" class="css-label radGroup2">PROPIA</label>
-                <input type="radio" id="radio25" name="tipo-vivienda"  class="css-checkbox" checked="checked" />
+                <input type="radio" id="radio25" name="solicitante_vivienda"  class="css-checkbox" checked="checked" value="FAMILIAR" />
                 <label for="radio25" class="css-label radGroup2">FAMILIAR</label>
-                <input type="radio" id="radio26" name="tipo-vivienda"  class="css-checkbox" checked="checked" />
+                <input type="radio" id="radio26" name="solicitante_vivienda"  class="css-checkbox" checked="checked" value="ARRIENDO" />
                 <label for="radio26" class="css-label radGroup2">ARRIENDO</label>
-                <input type="radio" id="radio27" name="tipo-vivienda"  class="css-checkbox" checked="checked" />
+                <input type="radio" id="radio27" name="solicitante_vivienda"  class="css-checkbox" checked="checked" value="FISCAL" />
                 <label for="radio27" class="css-label radGroup2">FISCAL</label>
               </div>
               <div class="columna-izq">
                 <h4 class="h4">TIENE HIJOS ESTUDIANDO EN COLEGIO DE LA POLICIA</h4>
-                <input type="radio" id="radio28" name="hijos-colegio"  class="css-checkbox" checked="checked" />
+                <input type="radio" id="radio28" name="solicitante_hijos_policia"  class="css-checkbox" checked="checked" value="SI" />
                 <label for="radio28" class="css-label radGroup2">SI</label>
-                <input type="radio" id="radio29" name="hijos-colegio"  class="css-checkbox" checked="checked" />
+                <input type="radio" id="radio29" name="solicitante_hijos_policia"  class="css-checkbox" checked="checked" value="NO" />
                 <label for="radio29" class="css-label radGroup2">NO</label>
               </div>
               <div class="column-der">
                 <h4 class="h4">GRADOS EN LOS QUE ESTUDIAN</h4>
-                <input type="number" name="grados-estudian1">
-                <input type="number" name="grados-estudian2">
-                <input type="number" name="grados-estudian3">
-                <input type="number" name="grados-estudian4">
+                <input type="number" name="solicitante_hijo_policia_grado_1">
+                <input type="number" name="solicitante_hijo_policia_grado_2">
+                <input type="number" name="solicitante_hijo_policia_grado_3">
+                <input type="number" name="solicitante_hijo_policia_grado_4">
               </div>
       <input type="button" name="previous" class="previous action-button" value="Anterior" />
       <input type="button" name="next" class="next action-button" value="Siguiente" />
@@ -321,45 +321,45 @@
         <h4>INGRESOS</h4>
         <p class="concepto">CONCEPTO</p>
         <p class="valor">VALOR</p>
-        <input type="text" name="ingresos-concepto1" class="col-izq">
-        <input type="number" name="ingresos-valor1" class="col-der">  
-        <input type="text" name="ingresos-concepto2" class="col-izq">
-        <input type="number" name="ingresos-valor2" class="col-der">  
-        <input type="text" name="ingresos-concepto3" class="col-izq">
-        <input type="number" name="ingresos-valor3" class="col-der">  
-        <input type="text" name="ingresos-concepto4" class="col-izq">
-        <input type="number" name="ingresos-valor4" class="col-der">  
-        <input type="text" name="ingresos-concepto5" class="col-izq">
-        <input type="number" name="ingresos-valor5" class="col-der">  
-        <input type="text" name="ingresos-concepto6" class="col-izq">
-        <input type="number" name="ingresos-valor6" class="col-der">  
-        <input type="text" name="ingresos-concepto7" class="col-izq">
-        <input type="number" name="ingresos-valor7" class="col-der">  
-        <input type="text" name="ingresos-concepto8" class="col-izq">
-        <input type="number" name="ingresos-valor8" class="col-der">  
-        <input type="text" name="ingresos-total" placeholder="TOTAL INGRESOS FAMILIARES">
+        <input type="text" name="economico_ingresos_concepto_1" class="col-izq">
+        <input type="number" name="economico_ingresos_valor_1" class="col-der">  
+        <input type="text" name="economico_ingresos_concepto_2" class="col-izq">
+        <input type="number" name="economico_ingresos_valor_2" class="col-der">  
+        <input type="text" name="economico_ingresos_concepto_3" class="col-izq">
+        <input type="number" name="economico_ingresos_valor_3" class="col-der">  
+        <input type="text" name="economico_ingresos_concepto_4" class="col-izq">
+        <input type="number" name="economico_ingresos_valor_4" class="col-der">  
+        <input type="text" name="economico_ingresos_concepto_5" class="col-izq">
+        <input type="number" name="economico_ingresos_valor_5" class="col-der">  
+        <input type="text" name="economico_ingresos_concepto_6" class="col-izq">
+        <input type="number" name="economico_ingresos_valor_6" class="col-der">  
+        <input type="text" name="economico_ingresos_concepto_7" class="col-izq">
+        <input type="number" name="economico_ingresos_valor_7" class="col-der">  
+        <input type="text" name="economico_ingresos_concepto_8" class="col-izq">
+        <input type="number" name="economico_ingresos_valor_8" class="col-der">  
+        <input type="text" name="economico_ingresos_total" placeholder="TOTAL INGRESOS FAMILIARES">
       </div>
       <div class="column-der">
         <h4>EGRESOS</h4>
         <p class="concepto">CONCEPTO</p>
         <p class="valor">VALOR</p>
-        <input type="text" name="egresos-concepto1" class="col-izq">
-        <input type="number" name="egresos-valor1" class="col-der">  
-        <input type="text" name="egresos-concepto2" class="col-izq">
-        <input type="number" name="egresos-valor2" class="col-der">  
-        <input type="text" name="egresos-concepto3" class="col-izq">
-        <input type="number" name="egresos-valor3" class="col-der">  
-        <input type="text" name="egresos-concepto4" class="col-izq">
-        <input type="number" name="egresos-valor4" class="col-der">  
-        <input type="text" name="egresos-concepto5" class="col-izq">
-        <input type="number" name="egresos-valor5" class="col-der">  
-        <input type="text" name="egresos-concepto6" class="col-izq" value="Estudios Superiores" placeholder="Estudios Superiores" disabled>
-        <input type="number" name="egresos-valor6" class="col-der">  
-        <input type="text" name="egresos-concepto7" class="col-izq" value="Compra o Mejora de Vivienda" placeholder="Compra o Mejora de Vivienda" disabled>
-        <input type="number" name="egresos-valor7" class="col-der" >  
-        <input type="text" name="egresos-concepto8" class="col-izq"value="Otros Cuales..?" placeholder="Otros Cuales?" disabled >
-        <input type="number" name="egresos-valor8" class="col-der" >  
-        <input type="text" name="ingresos-total" placeholder="TOTAL EGRESOS FAMILIARES">
+        <input type="text" name="economico_egresos_concepto_1" class="col-izq">
+        <input type="number" name="economico_egresos_valor_1" class="col-der">  
+        <input type="text" name="economico_egresos_concepto_2" class="col-izq">
+        <input type="number" name="economico_egresos_valor_2" class="col-der">  
+        <input type="text" name="economico_egresos_concepto_3" class="col-izq">
+        <input type="number" name="economico_egresos_valor_3" class="col-der">  
+        <input type="text" name="economico_egresos_concepto_4" class="col-izq">
+        <input type="number" name="economico_egresos_valor_4" class="col-der">  
+        <input type="text" name="economico_egresos_concepto_5" class="col-izq">
+        <input type="number" name="economico_egresos_valor_5" class="col-der">  
+        <input type="text" name="economico_egresos_concepto_6" class="col-izq" value="Estudios Superiores" placeholder="Estudios Superiores" disabled>
+        <input type="number" name="economico_egresos_valor_6" class="col-der">  
+        <input type="text" name="economico_egresos_concepto_7" class="col-izq" value="Compra o Mejora de Vivienda" placeholder="Compra o Mejora de Vivienda" disabled>
+        <input type="number" name="economico_egresos_valor_7" class="col-der" >  
+        <input type="text" name="economico_egresos_concepto_8" class="col-izq"value="Otros Cuales..?" placeholder="Otros Cuales?" disabled >
+        <input type="number" name="economico_egresos_valor_8" class="col-der" >  
+        <input type="text" name=" economico_egresos_total" placeholder="TOTAL EGRESOS FAMILIARES">
       </div> 
       <input type="button" name="previous" class="previous action-button" value="Anterior" />
       <input type="button" name="next" class="next action-button" value="Siguiente" />
