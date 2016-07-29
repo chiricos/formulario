@@ -21,7 +21,7 @@
     <fieldset>
       <h5><span>1</span>PROGRAMA DE EDUCACIÓN AL QUE APLICA</h5>
           <div class="plan">
-            <input type="radio" name="programa" id="radio2" class="css-checkbox" value="Plan padrino" checked="checked"/> 
+            <input type="radio" name="programa" id="radio2" class="css-checkbox" value="Plan padrino" />
             <label for="radio2" class="css-label radGroup1 plan-padri">PLAN PADRINO</label>
             <p class="descrip">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam convallis felis at tellus porttitor placerat. Cras iaculis, augue ut blandit venenatis, magna sem vulputate nulla, a volutpat odio tellus eu arcu. Sed dolor lorem, luctus et feugiat eget, feugiat nec purus. In lobortis consectetur tristique.</p>
           </div>
@@ -39,10 +39,12 @@
         <p class="descrip mike2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam convallis felis at tellus porttitor placerat. Cras iaculis, augue ut blandit venenatis, magna sem vulputate nulla, a volutpat odio tellus eu arcu. Sed dolor lorem, luctus et feugiat eget, feugiat nec purus. In lobortis consectetur tristique.</p>
       </div>
       <div class="column-der mike2" style="padding-top:56px;">
-        <input type="radio" id="radio4" name="antecedentes_clinicicos"  value="SI" class="css-checkbox mike2" checked="checked" />
-        <label for="radio4" class="css-label radGroup2 mike2">SI</label>
+        <input type="radio" id="radio4" name="antecedentes_clinicicos"  value="SI" class="css-checkbox mike2"  />
+        <label for="radio4" class="css-label radGroup2 mike2 si">SI</label>
         <input type="radio" id="radio5" name="antecedentes_clinicicos"  value="NO" class="css-checkbox" />
-        <label for="radio5" class="css-label radGroup2 mike2">NO</label>
+        <label for="radio5" class="css-label radGroup2 mike2 no">NO</label>
+      <input type="text" placeholder="¿Quien?" class="quien hidden">
+      <input type="file" class="quien hidden">
       </div>
       <!--FIN OPCIONES PLAN PADRINO-->   
       <!-- OPCIONES PLAN VALENTINA -->
@@ -241,52 +243,62 @@
                   <option value="five">5</option>
                 </select>
               </div>
-              <div class="column-der" style="width:40%;">
-                <h4 class="h4">EDADES <br> Y GENERO</h4>
-                <label>
-                  <input type="number" name="solicitante_hijo_edad_1" class="hijo1 hidden">
-                  <input type="radio" id="radio16" name="solicitante_hijo_genero_1"  class="css-checkbox" value="Masculino" />
-                  <label for="radio16" class="css-label radGroup2 hijo1 hidden">M</label>
-                  <input type="radio" id="radio17" name="solicitante_hijo_genero_1"  class="css-checkbox" value="Femenino"/>
-                  <label for="radio17" class="css-label radGroup2 hijo1 hidden">F</label>
-                </label> 
-                <label>
-                  <input type="number" name="solicitante_hijo_edad_2" class="hijo2 hidden">
-                  <input type="radio" id="radio18" name="solicitante_hijo_genero_2"  class="css-checkbox" value="Masculino"/>
-                  <label for="radio18" class="css-label radGroup2 hijo2 hidden">M</label>
-                  <input type="radio" id="radio19" name="solicitante_hijo_genero_2"  class="css-checkbox" value="Femenino"/>
-                  <label for="radio19" class="css-label radGroup2 hijo2 hidden">F</label>
-                </label> 
-                <label>
-                  <input type="number" name="solicitante_hijo_edad_3" class="hijo3 hidden">
-                  <input type="radio" id="radio20" name="solicitante_hijo_genero_3"  class="css-checkbox" value="Masculino"/>
-                  <label for="radio20" class="css-label radGroup2 hijo3 hidden">M</label>
-                  <input type="radio" id="radio21" name="solicitante_hijo_genero_3"  class="css-checkbox" value="Femenino"/>
-                  <label for="radio21" class="css-label radGroup2 hijo3 hidden">F</label>
-                </label>
-                <label>
-                  <input type="number" name="solicitante_hijo_edad_4" class="hijo4 hidden">
-                  <input type="radio" id="radio22" name="solicitante_hijo_genero_4"  class="css-checkbox" value="Masculino"/>
-                  <label for="radio22" class="css-label radGroup2 hijo4 hidden">M</label>
-                  <input type="radio" id="radio23" name="solicitante_hijo_genero_4"  class="css-checkbox" value="Femenino"/>
-                  <label for="radio23" class="css-label radGroup2 hijo4 hidden">F</label>
-                </label>
-                <label>
-                  <input type="number" name="solicitante_hijo_edad_5" class="hijo5 hidden">
-                  <input type="radio" id="radio22-1" name="solicitante_hijo_genero_5"  class="css-checkbox" value="Masculino"/>
-                  <label for="radio22-1" class="css-label radGroup2 hijo5 hidden">M</label>
-                  <input type="radio" id="radio23-1" name="solicitante_hijo_genero_5"  class="css-checkbox" value="Femenino"/>
-                  <label for="radio23-1" class="css-label radGroup2 hijo5 hidden">F</label>
-                </label>
-              </div>
-              <div class="column-grados">
-                  <h4 class="h4">GRADOS EN LOS QUE ESTUDIAN</h4>
-                  <input type="number" class="hijo1 hidden" name="solicitante_hijo_grado_1">
-                  <input type="number" class="hijo2 hidden" name="solicitante_hijo_grado_2">
-                  <input type="number" class="hijo3 hidden" name="solicitante_hijo_grado_3">
-                  <input type="number" class="hijo4 hidden" name="solicitante_hijo_grado_4">
-                  <input type="number" class="hijo5 hidden" name="solicitante_hijo_grado_5">  
-              </div>
+
+      <div class="column-der" style="width:40%; padding:0px;">
+          <h4 class="h4">EDADES <br> Y GENERO</h4>
+          <label>
+              <input type="number" name="solicitante_hijo_edad_1" class="hijo1 hidden">
+              <input type="radio" id="radio16" name="solicitante_hijo_genero_1"  class="css-checkbox"  value="Masculino" />
+              <label for="radio16" class="css-label radGroup2 hijo1 hidden">M</label>
+              <input type="radio" id="radio17" name="solicitante_hijo_genero_1"  class="css-checkbox" value="Femenino"/>
+              <label for="radio17" class="css-label radGroup2 hijo1 hidden">F</label>
+          </label>
+          <label>
+              <input type="number" name="solicitante_hijo_edad_2" class="hijo2 hidden">
+              <input type="radio" id="radio18" name="solicitante_hijo_genero_2"  class="css-checkbox" value="Masculino"/>
+              <label for="radio18" class="css-label radGroup2 hijo2 hidden">M</label>
+              <input type="radio" id="radio19" name="solicitante_hijo_genero_2"  class="css-checkbox" value="Femenino"/>
+              <label for="radio19" class="css-label radGroup2 hijo2 hidden">F</label>
+          </label>
+          <label>
+              <input type="number" name="solicitante_hijo_edad_3" class="hijo3 hidden">
+              <input type="radio" id="radio20" name="solicitante_hijo_genero_3"  class="css-checkbox" value="Masculino"/>
+              <label for="radio20" class="css-label radGroup2 hijo3 hidden">M</label>
+              <input type="radio" id="radio21" name="solicitante_hijo_genero_3"  class="css-checkbox" value="Femenino"/>
+              <label for="radio21" class="css-label radGroup2 hijo3 hidden">F</label>
+          </label>
+          <label>
+              <input type="number" name="solicitante_hijo_edad_4" class="hijo4 hidden">
+              <input type="radio" id="radio22" name="solicitante_hijo_genero_4"  class="css-checkbox" value="Masculino"/>
+              <label for="radio22" class="css-label radGroup2 hijo4 hidden">M</label>
+              <input type="radio" id="radio23" name="solicitante_hijo_genero_4"  class="css-checkbox" value="Femenino"/>
+              <label for="radio23" class="css-label radGroup2 hijo4 hidden">F</label>
+          </label>
+          <label>
+              <input type="number" name="solicitante_hijo_edad_5" class="hijo5 hidden">
+              <input type="radio" id="radio22-1" name="solicitante_hijo_genero_5"  class="css-checkbox" value="Masculino"/>
+              <label for="radio22-1" class="css-label radGroup2 hijo5 hidden">M</label>
+              <input type="radio" id="radio23-1" name="solicitante_hijo_genero_5"  class="css-checkbox" value="Femenino"/>
+              <label for="radio23-1" class="css-label radGroup2 hijo5 hidden">F</label>
+          </label>
+
+      </div>
+      <div class="column-grados">
+          <h4 class="h4">GRADOS EN LOS QUE ESTUDIAN</h4>
+          <input type="number" class="hijo1 hidden" name="solicitante_hijo_grado_1">
+          <input type="number" class="hijo2 hidden" name="solicitante_hijo_grado_2">
+          <input type="number" class="hijo3 hidden" name="solicitante_hijo_grado_3">
+          <input type="number" class="hijo4 hidden" name="solicitante_hijo_grado_4">
+          <input type="number" class="hijo5 hidden" name="solicitante_hijo_grado_5">
+      </div>
+      <div class="column-colegio">
+          <h4 class="h4">ESTUDIA EN EL COLEGIO DE LA POLICIA</h4>
+          <input type="checkbox" class="hijo1 hidden">
+          <input type="checkbox" class="hijo2 hidden">
+          <input type="checkbox" class="hijo3 hidden">
+          <input type="checkbox" class="hijo4 hidden">
+          <input type="checkbox" class="hijo5 hidden">
+      </div>
               <div class="tipo-vivienda">
                 <h4 class="h4">TIPO VIVIENDA</h4>
                 <input type="radio" id="radio24" name="solicitante_vivienda"  class="css-checkbox" checked="checked" value="PROPIA" />
@@ -298,20 +310,7 @@
                 <input type="radio" id="radio27" name="solicitante_vivienda"  class="css-checkbox" checked="checked" value="FISCAL" />
                 <label for="radio27" class="css-label radGroup2">FISCAL</label>
               </div>
-              <div class="columna-izq">
-                <h4 class="h4">TIENE HIJOS ESTUDIANDO EN COLEGIO DE LA POLICIA</h4>
-                <input type="radio" id="radio28" name="solicitante_hijos_policia"  class="css-checkbox" checked="checked" value="SI" />
-                <label for="radio28" class="css-label radGroup2">SI</label>
-                <input type="radio" id="radio29" name="solicitante_hijos_policia"  class="css-checkbox" checked="checked" value="NO" />
-                <label for="radio29" class="css-label radGroup2">NO</label>
-              </div>
-              <div class="column-der">
-                <h4 class="h4">GRADOS EN LOS QUE ESTUDIAN</h4>
-                <input type="number" name="solicitante_hijo_policia_grado_1">
-                <input type="number" name="solicitante_hijo_policia_grado_2">
-                <input type="number" name="solicitante_hijo_policia_grado_3">
-                <input type="number" name="solicitante_hijo_policia_grado_4">
-              </div>
+
       <input type="button" name="previous" class="previous action-button" value="Anterior" />
       <input type="button" name="next" class="next action-button" value="Siguiente" />
   </fieldset>

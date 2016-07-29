@@ -2,11 +2,17 @@ $(document).ready(function(){
 	$(".plan-vale").click(function(){
 		$(".mike").removeClass("hidden");
 		$(".mike2").addClass("hidden");
-	});		
+	});
 	$(".plan-padri").click(function(){
 		$(".mike2").removeClass("hidden");
-		$(".mike").addClass("hidden");
-	});	
+		$(".mike").removeClass("hidden");
+	});
+	$(".si").click(function(){
+		$(".quien").removeClass("hidden");
+	});
+	$(".no").click(function(){
+		$(".quien").addClass("hidden");
+	});
 	$("#radio6-1").click(function(){
 		$(".event").removeClass("hidden");
 	});
@@ -55,14 +61,85 @@ $(document).ready(function(){
 	$(".item1").click(function(){
 		$(".wrapper").removeClass("hidden");
 		$(".wrapper2").addClass("hidden");
+		$(".wrapper3").addClass("hidden");
+		$(".wrapper4").addClass("hidden");
+		$(".wrapper5").addClass("hidden");
+		$(".wrapper6").addClass("hidden");
 		$(this).addClass("active");
 		$(".item2").removeClass("active");
+		$(".item3").removeClass("active");
+		$(".item4").removeClass("active");
+		$(".item5").removeClass("active");
+		$(".item6").removeClass("active");
 	});
 	$(".item2").click(function(){
 		$(".wrapper").addClass("hidden");
 		$(".wrapper2").removeClass("hidden");
+		$(".wrapper3").addClass("hidden");
+		$(".wrapper4").addClass("hidden");
+		$(".wrapper5").addClass("hidden");
+		$(".wrapper6").addClass("hidden");
 		$(this).addClass("active");
 		$(".item1").removeClass("active");
+		$(".item3").removeClass("active");
+		$(".item4").removeClass("active");
+		$(".item5").removeClass("active");
+		$(".item6").removeClass("active");
+	});
+	$(".item3").click(function(){
+		$(".wrapper").addClass("hidden");
+		$(".wrapper2").addClass("hidden");
+		$(".wrapper3").removeClass("hidden");
+		$(".wrapper4").addClass("hidden");
+		$(".wrapper5").addClass("hidden");
+		$(".wrapper6").addClass("hidden");
+		$(this).addClass("active");
+		$(".item1").removeClass("active");
+		$(".item2").removeClass("active");
+		$(".item4").removeClass("active");
+		$(".item5").removeClass("active");
+		$(".item6").removeClass("active");
+	});
+	$(".item4").click(function(){
+		$(".wrapper").addClass("hidden");
+		$(".wrapper2").addClass("hidden");
+		$(".wrapper3").addClass("hidden");
+		$(".wrapper5").addClass("hidden");
+		$(".wrapper6").addClass("hidden");
+		$(".wrapper4").removeClass("hidden");
+		$(this).addClass("active");
+		$(".item1").removeClass("active");
+		$(".item2").removeClass("active");
+		$(".item3").removeClass("active");
+		$(".item5").removeClass("active");
+		$(".item6").removeClass("active");
+	});
+	$(".item5").click(function(){
+		$(".wrapper").addClass("hidden");
+		$(".wrapper2").addClass("hidden");
+		$(".wrapper3").addClass("hidden");
+		$(".wrapper4").addClass("hidden");
+		$(".wrapper5").removeClass("hidden");
+		$(this).addClass("active");
+		$(".item1").removeClass("active");
+		$(".item2").removeClass("active");
+		$(".item3").removeClass("active");
+		$(".item4").removeClass("active");
+		$(".item6").removeClass("active");
+	});
+	$(".item6").click(function(){
+		$(".wrapper").addClass("hidden");
+		$(".wrapper2").addClass("hidden");
+		$(".wrapper3").addClass("hidden");
+		$(".wrapper4").addClass("hidden");
+		$(".wrapper5").addClass("hidden");
+		$(".wrapper6").removeClass("hidden");
+		$(this).addClass("active");
+		$(".item1").removeClass("active");
+		$(".item2").removeClass("active");
+		$(".item3").removeClass("active");
+		$(".item4").removeClass("active");
+		$(".item5").removeClass("active");
 	});
 	$("#select").on('change', function(){
 		if ( $(this).val() == "otro" ){
@@ -114,6 +191,6 @@ $(document).ready(function(){
 			$(".hijo3").removeClass("hidden");
 			$(".hijo4").removeClass("hidden");
 			$(".hijo5").removeClass("hidden");
-		}	
+		}
 	});
 });
